@@ -13,7 +13,7 @@ const GuestGuard = ({ children }: GuardProps) => {
   const location = useLocation();
 
   useEffect(() => {
-    if (!isLoggedIn && location.pathname === "/orders") {
+    if (!isLoggedIn && location.pathname === "/") {
       navigate("/auth", {
         state: {
           from: location.pathname,
@@ -23,7 +23,7 @@ const GuestGuard = ({ children }: GuardProps) => {
     }
 
     if (isLoggedIn) {
-      navigate(location?.state?.from ? location?.state?.from : "/orders", {
+      navigate(location?.state?.from ? location?.state?.from : "/home", {
         state: {
           from: "",
         },
