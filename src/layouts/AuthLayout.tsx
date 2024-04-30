@@ -1,10 +1,13 @@
+import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 
 const AuthLayout = () => {
   return (
-    <div>
-      <Outlet />
-    </div>
+    <main>
+      <Suspense>
+        <Outlet />
+      </Suspense>
+    </main>
   );
 };
 

@@ -3,7 +3,7 @@ import { lazy } from "react";
 import AuthLayout from "../layouts/AuthLayout.tsx";
 import GuestGuard from "../utils/route-guard/GuestGuard";
 
-const WelcomePage = lazy(() => import("../pages/auth/Login.tsx"));
+const LoginPage = lazy(() => import("../pages/auth/Login.tsx"));
 
 const AuthRoutes = {
   path: "/",
@@ -18,7 +18,7 @@ const AuthRoutes = {
       children: [
         {
           path: "auth",
-          element: <WelcomePage />,
+          element: <LoginPage />,
         },
       ],
     },

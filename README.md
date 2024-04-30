@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Orders Test Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
+This document provides a detailed overview of web application which utilizes modern technologies for robust web development and user-friendly experiences.
 
-Currently, two official plugins are available:
+## Technology Stack
+- **React**: A JavaScript library for building user interfaces.
+- **React Router Dom**: Manages navigation within the application.
+- **Azure**: Cloud services for hosting and user authentication.
+- **TypeScript**: A superset of JavaScript that adds static types.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+### Authentication
+Leverage Azure for secure and versatile user authentication, which includes:
+- **Email and Password**: Users have the ability to register and log in with their email and password.
+- **Google Sign-In**: Provides an option for users to authenticate using their Google account via OAuth.
+- **Microsoft Sign-In**: Allows users to authenticate using their Microsoft account via OAuth.
 
-## Expanding the ESLint configuration
+### Routing
+Utilizes React Router Dom for efficient route management across the application.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Styling
+Tailwind CSS is used for styling components, enhancing the speed of UI development and maintenance.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
+To get started with this project, clone the repository and install the necessary dependencies.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone <repository-url>
+cd <repository-name>
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Create a .env.local file and paste the following code
+
+```bash
+AZURE_APP_CLIENT_ID=baeb5eaf-e410-4ad1-a5c1-612e43673535
+```
+
+## Run the Application
+To run the application locally:
+
+```bash
+npm run dev
+```

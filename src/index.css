@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.buttonLight {
+    @apply block rounded-md bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 dark:hover:bg-indigo-500
+}
+
+.buttonDark {
+    @apply rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block dark:bg-gray-800 dark:text-white dark:hover:text-white/75
+}
+
+.navLink {
+    @apply text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75
+}

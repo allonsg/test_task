@@ -1,11 +1,5 @@
-import { useMsal } from "@azure/msal-react";
-
 const Orders = () => {
-  const { instance } = useMsal();
-  const username =
-    instance.getActiveAccount()?.idTokenClaims?.extension_username;
-
-  return <div>Hello {username as string}</div>;
+  return <section>This is the order page.</section>;
 };
 
 export default Orders;

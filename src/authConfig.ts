@@ -19,7 +19,7 @@ export const msalConfig = {
     knownAuthorities: [b2cPolicies.authorityDomain],
     // redirectUri: "http://localhost:5173/home",
     redirectUri: "http://localhost:5173/auth/callback",
-    postLogoutRedirectUri: "http://localhost:5173",
+    postLogoutRedirectUri: "http://localhost:5173/auth",
     navigateToLoginRequestUrl: false,
   },
   cache: {

@@ -15,10 +15,7 @@ const Login = () => {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-r from-gray-700 via-gray-900 to-black">
-      <button
-        onClick={handleLoginRedirect}
-        className="transform rounded-lg bg-blue-500 px-8 py-4 font-bold text-white transition-all duration-300 ease-in-out hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300"
-      >
+      <button onClick={handleLoginRedirect} className="buttonLight">
         Login
       </button>
     </div>
